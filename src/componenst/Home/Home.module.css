@@ -1,0 +1,28 @@
+.cerrar{
+    margin-bottom: 30px;
+}
+
+.btncerrar{
+    padding: 10px;
+
+}
+
+.btncerrar:hover{
+    filter: drop-shadow(10px 10px 10px);
+}
+.publicar{
+    background-color: rgb(35, 110, 110);
+}
+.publicar:hover{
+    background-color:rgb(24, 75, 75) ;
+}
+.contenedor{
+    border: 2px solid rgb(35, 110, 110);
+    border-radius: 50px;
+}
+
+textarea{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(205, 205, 206, 0.993);
+}

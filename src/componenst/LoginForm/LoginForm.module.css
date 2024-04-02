@@ -1,0 +1,117 @@
+
+/* Colores */
+:root {
+  --color-fondo2:#111010;
+  --color-fondo: #1a1a1a;
+  --color-borde: #7212ad;
+  --color-texto: #ffffff;
+  --color-placeholder: #b5b5b5;
+  --color-boton: #7212ad;
+  --color-boton-hover: #a23ce1;
+  --color-boton-texto: #dfdfdf;
+  --color-link: #7212ad;
+  --color-link-hover:#ae5be1 ;
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+h4{
+  margin-top: 20px;
+}
+
+a {
+  color: var(--color-link);
+  margin-left: 10px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* Estilos del formulario */
+form {
+  background-color: var(--color-fondo2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px solid var(--color-borde);
+  border-radius: 1rem;
+  box-shadow:0 2em 2em 10px #000000;
+  max-width: 35rem;
+}
+
+
+.casilla,
+.casilla {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-borde);
+  color: var(--color-texto);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.casilla:focus,
+.casilla:focus {
+  outline: none;
+  border-color: var(--color-boton);
+}
+
+.casilla[type='text']::placeholder,
+.casilla[type='password']::placeholder {
+  color: var(--color-placeholder);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+}
+
+button {
+  background-color: var(--color-boton);
+  border: none;
+  border-radius: 1rem;
+  color: var(--color-boton-texto);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--color-boton-hover);
+  color: #000000;
+  box-shadow:0 5px 5px 4px #000000;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  form {
+    max-width: none;
+  }
+}
